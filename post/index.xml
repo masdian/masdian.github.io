@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on masdian</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on masdian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDrive Desktop Support Multi Account </title>
+      <link>/post/2021-07-25-gdrive-desktop-support-multi-account/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-07-25-gdrive-desktop-support-multi-account/</guid>
+      <description>Google Drive mungkin sudah tidak asing lagi bagi pengguna layanan penyimpanan online. Google Drive merupakan salah satu layanan penyimpanan online yang terintegrasi dengan berbagai macam aplikasi seperti email, photo, pengolah kata (google docs), pengolah angka (google sheets), dan lain-lain. Selain itu, kemudahan sinkronisasi data dengan berbagai perangkat menjadikan Google Drive menjadi salah satu layanan penyimpanan online yang paling banyak digunakan.
+Seperti kebanyakan layanan penyimpanan online lainnya, Google juga menyediakan aplikasi desktop agar pengguna bisa mengakses Google Drive seperti media penyimpanan fisik (hardisk) di komputer pengguna.</description>
+    </item>
+    
+    <item>
+      <title>latihan</title>
+      <link>/post/latihan/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/latihan/</guid>
+      <description>mtcars## mpg cyl disp hp drat wt qsec vs am gear carb## Mazda RX4 21.0 6 160.0 110 3.90 2.620 16.46 0 1 4 4## Mazda RX4 Wag 21.0 6 160.0 110 3.90 2.875 17.02 0 1 4 4## Datsun 710 22.8 4 108.0 93 3.85 2.320 18.61 1 1 4 1## Hornet 4 Drive 21.4 6 258.0 110 3.08 3.215 19.44 1 0 3 1## Hornet Sportabout 18.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+  </channel>
+</rss>

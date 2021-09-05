@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>masdian</title>
+    <link>/</link>
+    <description>Recent content on masdian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menunggu Tidur</title>
+      <link>/posts/2021-09-05-menunggu-tidur/</link>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-09-05-menunggu-tidur/</guid>
+      <description>Gambar di atas tidak ada hubungannya dengan judul postingan ini. Harap maklum</description>
+    </item>
+    
+    <item>
+      <title>GDrive Desktop Support Multi Account</title>
+      <link>/posts/2021-07-25-gdrive-desktop-support-multi-account/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-07-25-gdrive-desktop-support-multi-account/</guid>
+      <description>Google Drive mungkin sudah tidak asing lagi bagi pengguna layanan penyimpanan online. Google Drive merupakan salah satu layanan penyimpanan online dari Google yang terintegrasi dengan berbagai macam aplikasi Google lain seperti email, photo, pengolah kata (google docs), pengolah angka (google sheets), dan lain-lain. Selain itu, kemudahan sinkronisasi data dengan berbagai perangkat menjadikan Google Drive menjadi salah satu layanan penyimpanan online yang paling banyak digunakan.
+Seperti kebanyakan layanan penyimpanan online lainnya, Google juga menyediakan aplikasi desktop agar pengguna bisa mengakses data yang tersimpan pada Google Drive seperti mengakses data pada penyimpanan fisik (hardisk) di komputer pengguna.</description>
+    </item>
+    
+    <item>
+      <title>GDrive Desktop Support Multi Account </title>
+      <link>/post/2021-07-25-gdrive-desktop-support-multi-account/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-07-25-gdrive-desktop-support-multi-account/</guid>
+      <description>Google Drive mungkin sudah tidak asing lagi bagi pengguna layanan penyimpanan online. Google Drive merupakan salah satu layanan penyimpanan online yang terintegrasi dengan berbagai macam aplikasi seperti email, photo, pengolah kata (google docs), pengolah angka (google sheets), dan lain-lain. Selain itu, kemudahan sinkronisasi data dengan berbagai perangkat menjadikan Google Drive menjadi salah satu layanan penyimpanan online yang paling banyak digunakan.
+Seperti kebanyakan layanan penyimpanan online lainnya, Google juga menyediakan aplikasi desktop agar pengguna bisa mengakses Google Drive seperti media penyimpanan fisik (hardisk) di komputer pengguna.</description>
+    </item>
+    
+    <item>
+      <title>Working Smarter, not Harder</title>
+      <link>/posts/working-smarter-not-harder/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/working-smarter-not-harder/</guid>
+      <description>count()
+Pengguna R saat ini tentu sangat bersyukur karena dimanjakan oleh banyak sekali kemudahan ketika menggunakan R untuk berbagai keperluan. Salah satu kemudahan yang didapat oleh pengguna R adalah kemudahan dalam melakukan manipulasi data dengan menggunakan package tidyverse. Bagi yang terbiasa menggunakan SQL, tentu tidak akan kesulitan dalam melakukan manipulasi data dengan tidyverse. Tulisan kali ini akan mengulas sedikit tentang manipulasi data menggunakan R.
+Data yang akan digunakan adalah data penghasilan (income) yang diambil dari database Biro Sensus Amerika Serikat tahun 1994 oleh Ronny Kohavi dan Barry Becker (Data Mining and Visualization, Silicon Graphics).</description>
+    </item>
+    
+    <item>
+      <title>Covid-19 Dashboard</title>
+      <link>/projects/covid-19-dashboard/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/covid-19-dashboard/</guid>
+      <description>Visit Covid-19 static dashboard at masdian.github.io</description>
+    </item>
+    
+    <item>
+      <title>latihan</title>
+      <link>/post/latihan/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/latihan/</guid>
+      <description>mtcars## mpg cyl disp hp drat wt qsec vs am gear carb## Mazda RX4 21.0 6 160.0 110 3.90 2.620 16.46 0 1 4 4## Mazda RX4 Wag 21.0 6 160.0 110 3.90 2.875 17.02 0 1 4 4## Datsun 710 22.8 4 108.0 93 3.85 2.320 18.61 1 1 4 1## Hornet 4 Drive 21.4 6 258.0 110 3.08 3.215 19.44 1 0 3 1## Hornet Sportabout 18.</description>
+    </item>
+    
+    <item>
+      <title>Memecah Data dengan pwalk()</title>
+      <link>/posts/macan/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macan/</guid>
+      <description>Sebagai orang yang banyak berkecimpung dengan data, terkadang kita diminta untuk memecah sebuah tabel berdasarkan kategori yang ada pada sebuah peubah pada tabel tersebut dan menyimpannya sebagai file dengan format tertentu (misalnya csv) dalam suatu folder tertentu. Jika tabel yang kita punya tidak terlalu besar dan banyaknya kategori juga sedikit, maka kita bisa melakukan filter satu persatu atau filter dengan perulangan (looping) menggunakan for.
+Misalnya kita akan memecah tabel iris berdasarkan peubah Species, sehingga akan terbentuk 3 (tiga) buah tabel baru.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>My name is Riana Hadiana and I am a data lover. I love making beautiful charts, the statistical programming language R, soccer, futsal, Stephen Chow, Real Racing 3, FIFA mobile, and something stupid like I love you. I studied Statistics (formal) and Computer Science (non-formal), finishing my master in 2019. I live in Serang and Lampung, Indonesia, with my job and my family.
+This blog is built with blogdown and Hugo.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>Fast response at Twitter - @rianahadiana.</description>
+    </item>
+    
+    <item>
+      <title>First snippet</title>
+      <link>/snippets/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/snippets/first/</guid>
+      <description>This content is in snippets/first/index.md
+pwd </description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/resume/</guid>
+      <description>Skills and Tools Machine learning, statistical modeling, data analysis, R, SQL, Markdown, R Markdown, Github, Linux
+Experience   Freelance Data Engineer (2015 - present)
+  Mathematics Teacher, SMA Sugar Group (2010 - 2015)
+  Actuarial Officer, Zurich Insurance Indonesia (2008 - 2009)
+  Book Editor, PT Penerbit Erlangga (2003 - 2008)
+  Education  XXX University - Ph.D in Data Science, 2025 (hopefully) IPB University - Master in Applied Statistics, 2019 Gadjah Mada University - Bachelor Degeree in Statistics, 2003  </description>
+    </item>
+    
+    <item>
+      <title>Second snippet</title>
+      <link>/snippets/second/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/snippets/second/</guid>
+      <description>This content is in snippets/second/index.md
+ls -la </description>
+    </item>
+    
+  </channel>
+</rss>

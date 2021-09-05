@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud on masdian</title>
+    <link>/tags/cloud/</link>
+    <description>Recent content in cloud on masdian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDrive Desktop Support Multi Account</title>
+      <link>/posts/2021-07-25-gdrive-desktop-support-multi-account/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-07-25-gdrive-desktop-support-multi-account/</guid>
+      <description>Google Drive mungkin sudah tidak asing lagi bagi pengguna layanan penyimpanan online. Google Drive merupakan salah satu layanan penyimpanan online dari Google yang terintegrasi dengan berbagai macam aplikasi Google lain seperti email, photo, pengolah kata (google docs), pengolah angka (google sheets), dan lain-lain. Selain itu, kemudahan sinkronisasi data dengan berbagai perangkat menjadikan Google Drive menjadi salah satu layanan penyimpanan online yang paling banyak digunakan.
+Seperti kebanyakan layanan penyimpanan online lainnya, Google juga menyediakan aplikasi desktop agar pengguna bisa mengakses data yang tersimpan pada Google Drive seperti mengakses data pada penyimpanan fisik (hardisk) di komputer pengguna.</description>
+    </item>
+    
+    <item>
+      <title>GDrive Desktop Support Multi Account </title>
+      <link>/post/2021-07-25-gdrive-desktop-support-multi-account/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2021-07-25-gdrive-desktop-support-multi-account/</guid>
+      <description>Google Drive mungkin sudah tidak asing lagi bagi pengguna layanan penyimpanan online. Google Drive merupakan salah satu layanan penyimpanan online yang terintegrasi dengan berbagai macam aplikasi seperti email, photo, pengolah kata (google docs), pengolah angka (google sheets), dan lain-lain. Selain itu, kemudahan sinkronisasi data dengan berbagai perangkat menjadikan Google Drive menjadi salah satu layanan penyimpanan online yang paling banyak digunakan.
+Seperti kebanyakan layanan penyimpanan online lainnya, Google juga menyediakan aplikasi desktop agar pengguna bisa mengakses Google Drive seperti media penyimpanan fisik (hardisk) di komputer pengguna.</description>
+    </item>
+    
+  </channel>
+</rss>

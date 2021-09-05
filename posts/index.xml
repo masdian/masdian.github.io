@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on masdian</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on masdian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menunggu Tidur</title>
+      <link>/posts/2021-09-05-menunggu-tidur/</link>
+      <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-09-05-menunggu-tidur/</guid>
+      <description>Gambar di atas tidak ada hubungannya dengan judul postingan ini. Harap maklum</description>
+    </item>
+    
+    <item>
+      <title>GDrive Desktop Support Multi Account</title>
+      <link>/posts/2021-07-25-gdrive-desktop-support-multi-account/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-07-25-gdrive-desktop-support-multi-account/</guid>
+      <description>Google Drive mungkin sudah tidak asing lagi bagi pengguna layanan penyimpanan online. Google Drive merupakan salah satu layanan penyimpanan online dari Google yang terintegrasi dengan berbagai macam aplikasi Google lain seperti email, photo, pengolah kata (google docs), pengolah angka (google sheets), dan lain-lain. Selain itu, kemudahan sinkronisasi data dengan berbagai perangkat menjadikan Google Drive menjadi salah satu layanan penyimpanan online yang paling banyak digunakan.
+Seperti kebanyakan layanan penyimpanan online lainnya, Google juga menyediakan aplikasi desktop agar pengguna bisa mengakses data yang tersimpan pada Google Drive seperti mengakses data pada penyimpanan fisik (hardisk) di komputer pengguna.</description>
+    </item>
+    
+    <item>
+      <title>Working Smarter, not Harder</title>
+      <link>/posts/working-smarter-not-harder/</link>
+      <pubDate>Sun, 19 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/working-smarter-not-harder/</guid>
+      <description>count()
+Pengguna R saat ini tentu sangat bersyukur karena dimanjakan oleh banyak sekali kemudahan ketika menggunakan R untuk berbagai keperluan. Salah satu kemudahan yang didapat oleh pengguna R adalah kemudahan dalam melakukan manipulasi data dengan menggunakan package tidyverse. Bagi yang terbiasa menggunakan SQL, tentu tidak akan kesulitan dalam melakukan manipulasi data dengan tidyverse. Tulisan kali ini akan mengulas sedikit tentang manipulasi data menggunakan R.
+Data yang akan digunakan adalah data penghasilan (income) yang diambil dari database Biro Sensus Amerika Serikat tahun 1994 oleh Ronny Kohavi dan Barry Becker (Data Mining and Visualization, Silicon Graphics).</description>
+    </item>
+    
+    <item>
+      <title>Memecah Data dengan pwalk()</title>
+      <link>/posts/macan/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/macan/</guid>
+      <description>Sebagai orang yang banyak berkecimpung dengan data, terkadang kita diminta untuk memecah sebuah tabel berdasarkan kategori yang ada pada sebuah peubah pada tabel tersebut dan menyimpannya sebagai file dengan format tertentu (misalnya csv) dalam suatu folder tertentu. Jika tabel yang kita punya tidak terlalu besar dan banyaknya kategori juga sedikit, maka kita bisa melakukan filter satu persatu atau filter dengan perulangan (looping) menggunakan for.
+Misalnya kita akan memecah tabel iris berdasarkan peubah Species, sehingga akan terbentuk 3 (tiga) buah tabel baru.</description>
+    </item>
+    
+  </channel>
+</rss>
