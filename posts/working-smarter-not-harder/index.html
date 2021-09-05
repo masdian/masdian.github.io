@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Riana Hadiana">
+    <meta name="description" content="Riana Hadiana&#39;s personal website">
+    <meta name="keywords" content="data science,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Working Smarter, not Harder"/>
+<meta name="twitter:description" content="count()
+Pengguna R saat ini tentu sangat bersyukur karena dimanjakan oleh banyak sekali kemudahan ketika menggunakan R untuk berbagai keperluan. Salah satu kemudahan yang didapat oleh pengguna R adalah kemudahan dalam melakukan manipulasi data dengan menggunakan package tidyverse. Bagi yang terbiasa menggunakan SQL, tentu tidak akan kesulitan dalam melakukan manipulasi data dengan tidyverse. Tulisan kali ini akan mengulas sedikit tentang manipulasi data menggunakan R.
+Data yang akan digunakan adalah data penghasilan (income) yang diambil dari database Biro Sensus Amerika Serikat tahun 1994 oleh Ronny Kohavi dan Barry Becker (Data Mining and Visualization, Silicon Graphics)."/>
+
+    <meta property="og:title" content="Working Smarter, not Harder" />
+<meta property="og:description" content="count()
+Pengguna R saat ini tentu sangat bersyukur karena dimanjakan oleh banyak sekali kemudahan ketika menggunakan R untuk berbagai keperluan. Salah satu kemudahan yang didapat oleh pengguna R adalah kemudahan dalam melakukan manipulasi data dengan menggunakan package tidyverse. Bagi yang terbiasa menggunakan SQL, tentu tidak akan kesulitan dalam melakukan manipulasi data dengan tidyverse. Tulisan kali ini akan mengulas sedikit tentang manipulasi data menggunakan R.
+Data yang akan digunakan adalah data penghasilan (income) yang diambil dari database Biro Sensus Amerika Serikat tahun 1994 oleh Ronny Kohavi dan Barry Becker (Data Mining and Visualization, Silicon Graphics)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/working-smarter-not-harder/" />
+<meta property="article:published_time" content="2020-04-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-19T00:00:00+00:00" />
+
+
+    
+      <base href="/posts/working-smarter-not-harder/">
+    
+    <title>
+  Working Smarter, not Harder · masdian
+</title>
+
+    
+      <link rel="canonical" href="/posts/working-smarter-not-harder/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/css/coder-dark.min.83a2010dac9f59f943b3004cd6c4f230507ad036da635d3621401d42ec4e2835.css" integrity="sha256-g6IBDayfWflDswBM1sTyMFB60DbaY102IUAdQuxOKDU=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.80.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      masdian
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://masdian.github.io/CV/">Resume</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Working Smarter, not Harder</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-04-19T00:00:00Z'>
+                April 19, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p><strong><code>count()</code></strong></p>
+<p>Pengguna <strong>R</strong> saat ini tentu sangat bersyukur karena dimanjakan oleh banyak sekali kemudahan ketika menggunakan <strong>R</strong> untuk berbagai keperluan. Salah satu kemudahan yang didapat oleh pengguna <strong>R</strong> adalah kemudahan dalam melakukan manipulasi data dengan menggunakan <em>package</em> <code>tidyverse</code>. Bagi yang terbiasa menggunakan <strong>SQL</strong>, tentu tidak akan kesulitan dalam melakukan manipulasi data dengan <code>tidyverse</code>. Tulisan kali ini akan mengulas sedikit tentang manipulasi data menggunakan <strong>R</strong>.</p>
+<p>Data yang akan digunakan adalah data penghasilan (<em>income</em>) yang diambil dari database <a href="https://www.census.gov/en.html">Biro Sensus Amerika Serikat tahun 1994</a> oleh Ronny Kohavi dan Barry Becker (Data Mining and Visualization, Silicon Graphics). Data tersebut bisa diunduh <a href="https://business-science.us17.list-manage.com/track/click?u=cc36813ecec32f8e7b5088961&amp;id=afd7cd4cfe&amp;e=f55c4a6ff8">di sini</a>.</p>
+<p>Data hasil unduhan berupa file csv dan diberi nama “income-1”. Data tersebut bisa dibuka menggunakan sintaks berikut</p>
+<pre class="r"><code>income &lt;- read.csv(&quot;income-1.csv&quot;)</code></pre>
+<p><em>Package</em> yang akan digunakan adalah <code>tidyverse</code> dan <code>broom</code>.</p>
+<pre class="r"><code>library(tidyverse)
+library(broom)</code></pre>
+<p>Sintaks berikut akan membuat tabel baru yang berisi peubah (<em>variable</em>) <code>gender</code>, <code>country</code>, dan agregat <code>hours_per_week</code> yang diberi nama <code>total_hours</code>. Kemudian data diurutkan secara menurun (<em>descending</em>) berdasarkan <code>total_hours</code>.</p>
+<pre class="r"><code>income %&gt;%
+  group_by(gender, country) %&gt;%
+  summarize(total_hours = sum(hours_per_week)) %&gt;%
+  arrange(desc(total_hours))</code></pre>
+<pre><code>## `summarise()` has grouped output by &#39;gender&#39;. You can override using the `.groups` argument.</code></pre>
+<pre><code>## # A tibble: 83 x 3
+## # Groups:   gender [2]
+##    gender country       total_hours
+##    &lt;chr&gt;  &lt;chr&gt;               &lt;int&gt;
+##  1 Male   United States      828148
+##  2 Female United States      351713
+##  3 Male   Mexico              20577
+##  4 Male   &lt;NA&gt;                18094
+##  5 Female &lt;NA&gt;                 6108
+##  6 Female Mexico               5362
+##  7 Male   Philippines          5053
+##  8 Male   India                3760
+##  9 Male   Germany              3487
+## 10 Male   Canada               3360
+## # ... with 73 more rows</code></pre>
+<p>Karena terdapat <code>NA</code> pada peubah <code>country</code>, maka <strong>R</strong> menampilkan pesan (<em>WARNING</em>) sekaligus saran perbaikannya. Berikut adalah sintaks untuk mengatasi masalah tersebut.</p>
+<pre class="r"><code>income$country &lt;- fct_explicit_na(income$country)</code></pre>
+<p>Setelah dilakukan perbaikan, maka tidak ada lagi pesan kesalahan dan tampilan tabel baru tersebut adalah sebagai berikut.</p>
+<pre><code>## `summarise()` has grouped output by &#39;gender&#39;. You can override using the `.groups` argument.</code></pre>
+<pre><code>## # A tibble: 83 x 3
+## # Groups:   gender [2]
+##    gender country       total_hours
+##    &lt;chr&gt;  &lt;fct&gt;               &lt;int&gt;
+##  1 Male   United States      828148
+##  2 Female United States      351713
+##  3 Male   Mexico              20577
+##  4 Male   (Missing)           18094
+##  5 Female (Missing)            6108
+##  6 Female Mexico               5362
+##  7 Male   Philippines          5053
+##  8 Male   India                3760
+##  9 Male   Germany              3487
+## 10 Male   Canada               3360
+## # ... with 73 more rows</code></pre>
+<p>Ternyata, tabel yang sama bisa dibuat hanya dengan menggunakan sebaris sintaks menggunakan fungsi <code>count</code>. Berikut adalah sintaksnya.</p>
+<pre class="r"><code>income %&gt;%
+  count(gender, country, wt = hours_per_week, name = &quot;total_hours&quot;, sort = T)</code></pre>
+<pre><code>##    gender             country total_hours
+## 1    Male       United States      828148
+## 2  Female       United States      351713
+## 3    Male              Mexico       20577
+## 4    Male           (Missing)       18094
+## 5  Female           (Missing)        6108
+## 6  Female              Mexico        5362
+## 7    Male         Philippines        5053
+## 8    Male               India        3760
+## 9    Male             Germany        3487
+## 10   Male              Canada        3360
+## 11 Female         Philippines        2787
+## 12   Male         El Salvador        2678
+## 13   Male         Puerto Rico        2511
+## 14   Male             England        2444
+## 15   Male                Cuba        2323
+## 16   Male               South        2254
+## 17   Male               Italy        2226
+## 18 Female             Germany        2132
+## 19   Male               China        2078
+## 20   Male               Japan        1986
+## 21 Female         Puerto Rico        1886
+## 22   Male           Guatemala        1719
+## 23   Male             Vietnam        1673
+## 24   Male              Poland        1644
+## 25 Female             Jamaica        1580
+## 26   Male  Dominican Republic        1566
+## 27   Male                Iran        1563
+## 28   Male             Jamaica        1546
+## 29 Female              Canada        1529
+## 30   Male              Taiwan        1492
+## 31 Female  Dominican Republic        1407
+## 32   Male            Columbia        1398
+## 33 Female                Cuba        1397
+## 34 Female             England        1321
+## 35 Female         El Salvador        1222
+## 36 Female               South        1139
+## 37   Male            Portugal        1084
+## 38   Male              Greece        1074
+## 39   Male               Haiti         939
+## 40 Female            Columbia         907
+## 41   Male              France         845
+## 42   Male             Ecuador         833
+## 43 Female             Vietnam         829
+## 44   Male           Nicaragua         829
+## 45 Female               Italy         811
+## 46 Female           Guatemala         792
+## 47 Female               China         756
+## 48   Male             Ireland         727
+## 49 Female               Japan         723
+## 50 Female               Haiti         685
+## 51   Male            Cambodia         657
+## 52 Female              Poland         656
+## 53   Male          Yugoslavia         613
+## 54   Male                Hong         588
+## 55 Female                Peru         549
+## 56   Male                Peru         548
+## 57 Female              Taiwan         491
+## 58 Female            Thailand         485
+## 59 Female            Portugal         466
+## 60 Female              France         462
+## 61 Female           Nicaragua         401
+## 62   Male                Laos         400
+## 63 Female               India         393
+## 64 Female Trinadad and Tobago         372
+## 65   Male Trinadad and Tobago         338
+## 66   Male            Thailand         333
+## 67 Female                Iran         328
+## 68 Female                Laos         326
+## 69   Male         Outlying US         310
+## 70   Male            Scotland         300
+## 71 Female             Ireland         291
+## 72   Male             Hungary         290
+## 73 Female         Outlying US         276
+## 74 Female             Ecuador         275
+## 75 Female            Honduras         252
+## 76 Female                Hong         230
+## 77   Male            Honduras         220
+## 78 Female              Greece         209
+## 79 Female            Scotland         195
+## 80 Female             Hungary         173
+## 81 Female            Cambodia         120
+## 82 Female          Yugoslavia         100
+## 83 Female  Holand Netherlands          40</code></pre>
+<p>Bagaimana? Gampang bukan?</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "masdian" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+          2019 -
+        
+        2021
+         Riana Hadiana 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+        
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    <script>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//analytics.example.com/tracker.js', 'fathom');
+fathom('set', 'siteId', 'ABCDE');
+fathom('trackPageview');
+</script>
+
+
+  </body>
+
+</html>
