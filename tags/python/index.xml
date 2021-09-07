@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python on masdian</title>
+    <link>/tags/python/</link>
+    <description>Recent content in python on masdian</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Pandas</title>
+      <link>/posts/2021-09-07-introduction-to-pandas/</link>
+      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-09-07-introduction-to-pandas/</guid>
+      <description>Pandas adalah salah satu library Python yang sangat berguna dalam mengolah dataframe. Pandas digunakan untuk meng-explore, membersihkan hingga memproses suatu data frame. Dataframe adalah sebuah tabel dua dimensi di mana setiap kolom berisi nilai-nilai dari suatu peubah (variabel).
+NamaPekerjaanAlamatMasdianFreelancerSerangCatoDreamerSerangAbahProgrammerSerangCara membuat dataframe - input data manualimport pandas as pddata_dict = {&amp;#39;Nama&amp;#39;:[&amp;#39;Masdian&amp;#39;, &amp;#39;Cato&amp;#39;, &amp;#39;Abah&amp;#39;],&amp;#39;Pekerjaan&amp;#39;:[&amp;#39;Freelancer&amp;#39;, &amp;#39;Dreamer&amp;#39;, &amp;#39;Programmer&amp;#39;],&amp;#39;Alamat&amp;#39;:[&amp;#39;Serang&amp;#39;, &amp;#39;Serang&amp;#39;, &amp;#39;Serang&amp;#39;]}pd.</description>
+    </item>
+    
+  </channel>
+</rss>
