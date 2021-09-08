@@ -11,12 +11,10 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Introduction to Pandas"/>
-<meta name="twitter:description" content="Pandas adalah salah satu library Python yang sangat berguna dalam mengolah dataframe. Pandas digunakan untuk meng-explore, membersihkan hingga memproses suatu data frame. Dataframe adalah sebuah tabel dua dimensi di mana setiap kolom berisi nilai-nilai dari suatu peubah (variabel).
-NamaPekerjaanAlamatMasdianFreelancerSerangCatoDreamerSerangAbahProgrammerSerangCara membuat dataframe - input data manualimport pandas as pddata_dict = {&#39;Nama&#39;:[&#39;Masdian&#39;, &#39;Cato&#39;, &#39;Abah&#39;],&#39;Pekerjaan&#39;:[&#39;Freelancer&#39;, &#39;Dreamer&#39;, &#39;Programmer&#39;],&#39;Alamat&#39;:[&#39;Serang&#39;, &#39;Serang&#39;, &#39;Serang&#39;]}pd."/>
+<meta name="twitter:description" content="Tulisan ini terinspirasi setelah mengikuti sesi minggu ke-3 atau minggu terakhir dari Workshop Python for Data Scientist yang diselenggarakan oleh Program Studi Statistika dan Sains Data - IPB University. Workshop Pyhton for Data Scientist diselenggarakan selama 3 hari di mana hari pertama pada tanggal 21 Agustus 2021 membahas tentang Introduction to Python. Hari kedua diselenggarakan pada 28 Agustus 2021 dan membahas tentang Data Analysis using Python. Hari ketiga di mana akhirnya bisa ikut secara live diselenggarakan pada 04 September 2021."/>
 
     <meta property="og:title" content="Introduction to Pandas" />
-<meta property="og:description" content="Pandas adalah salah satu library Python yang sangat berguna dalam mengolah dataframe. Pandas digunakan untuk meng-explore, membersihkan hingga memproses suatu data frame. Dataframe adalah sebuah tabel dua dimensi di mana setiap kolom berisi nilai-nilai dari suatu peubah (variabel).
-NamaPekerjaanAlamatMasdianFreelancerSerangCatoDreamerSerangAbahProgrammerSerangCara membuat dataframe - input data manualimport pandas as pddata_dict = {&#39;Nama&#39;:[&#39;Masdian&#39;, &#39;Cato&#39;, &#39;Abah&#39;],&#39;Pekerjaan&#39;:[&#39;Freelancer&#39;, &#39;Dreamer&#39;, &#39;Programmer&#39;],&#39;Alamat&#39;:[&#39;Serang&#39;, &#39;Serang&#39;, &#39;Serang&#39;]}pd." />
+<meta property="og:description" content="Tulisan ini terinspirasi setelah mengikuti sesi minggu ke-3 atau minggu terakhir dari Workshop Python for Data Scientist yang diselenggarakan oleh Program Studi Statistika dan Sains Data - IPB University. Workshop Pyhton for Data Scientist diselenggarakan selama 3 hari di mana hari pertama pada tanggal 21 Agustus 2021 membahas tentang Introduction to Python. Hari kedua diselenggarakan pada 28 Agustus 2021 dan membahas tentang Data Analysis using Python. Hari ketiga di mana akhirnya bisa ikut secara live diselenggarakan pada 04 September 2021." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/2021-09-07-introduction-to-pandas/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-07T00:00:00+00:00" />
@@ -130,7 +128,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              1-minute read
+              2-minute read
             </span>
           </div>
           
@@ -147,7 +145,10 @@
 <script src="/posts/2021-09-07-introduction-to-pandas/index.en_files/header-attrs/header-attrs.js"></script>
 
 
-<p>Pandas adalah salah satu library Python yang sangat berguna dalam mengolah dataframe. Pandas digunakan untuk meng-explore, membersihkan hingga memproses suatu data frame. Dataframe adalah sebuah tabel dua dimensi di mana setiap kolom berisi nilai-nilai dari suatu peubah (variabel).</p>
+<p>Tulisan ini terinspirasi setelah mengikuti sesi minggu ke-3 atau minggu terakhir dari <em>Workshop Python for Data Scientist</em> yang diselenggarakan oleh Program Studi Statistika dan Sains Data - IPB University. <em>Workshop Pyhton for Data Scientist</em> diselenggarakan selama 3 hari di mana hari pertama pada tanggal 21 Agustus 2021 membahas tentang <em>Introduction to Python</em>. Hari kedua diselenggarakan pada 28 Agustus 2021 dan membahas tentang <em>Data Analysis using Python</em>. Hari ketiga di mana akhirnya bisa ikut secara live diselenggarakan pada 04 September 2021. Kali ini yang dibahas adalah <em>Machine Learning using Python</em>.</p>
+<p>Entah kenapa bisa <em>miss</em> di minggu pertama dan minggu kedua :-D</p>
+<p>Meskipun hanya mengikuti hari terakhir, tulisan ini bukan materi yang dibahas di hari terakhir. Ucapan terima kasih sangat layak kepada panitia <em>Workshop</em> yang telah memberikan mengumpulkan dan membagi materi yang dibahas pada minggu pertama dan kedua sehingga yang tidak sempat ikut pun bisa mencoba untuk membaca dan mempelajarinya.</p>
+<p>Pandas adalah salah satu library Python yang sangat berguna dalam mengolah dataframe. Pandas digunakan untuk meng-explore, membersihkan hingga memproses suatu data frame. Dataframe adalah sebuah tabel dua dimensi di mana setiap kolom berisi nilai-nilai dari suatu peubah (variabel). Berikut adalah contoh dataframe yang terdiri atas 3 kolom peubah, yaitu Nama, Pekerjaan, dan Alamat.</p>
 <table>
 <thead>
 <tr class="header">
@@ -176,19 +177,35 @@
 </table>
 <div id="cara-membuat-dataframe---input-data-manual" class="section level3">
 <h3>Cara membuat dataframe - input data manual</h3>
-<pre class="python"><code>import pandas as pd
-
-data_dict = {
+<p>Dataframe bisa dibuat si python dengan cara mengkonversi <code>dictionary</code> menjadi dataframe menggunakan fungsi <code>DataFrame</code> dari library pandas. Pertama, buat <code>dictionary</code> menggunakan data pada tabel di atas.</p>
+<pre class="python"><code>data_dict = {
   &#39;Nama&#39;:[&#39;Masdian&#39;, &#39;Cato&#39;, &#39;Abah&#39;],
   &#39;Pekerjaan&#39;:[&#39;Freelancer&#39;, &#39;Dreamer&#39;, &#39;Programmer&#39;],
   &#39;Alamat&#39;:[&#39;Serang&#39;, &#39;Serang&#39;, &#39;Serang&#39;]
-}
-
-pd.DataFrame(data_dict)</code></pre>
+}</code></pre>
+<p>Setelah itu <em>import</em> library pandas.</p>
+<pre class="python"><code>import pandas as pd</code></pre>
+<p>Berikut adalah sintaks untuk menampilkan <code>dictionary data_dict</code> sebagai dataframe.</p>
+<pre class="python"><code>pd.DataFrame(data_dict)</code></pre>
 <pre><code>##       Nama   Pekerjaan  Alamat
 ## 0  Masdian  Freelancer  Serang
 ## 1     Cato     Dreamer  Serang
 ## 2     Abah  Programmer  Serang</code></pre>
+<p>Jika ingin mengubah <code>data_dict</code> menjadi dataframe, maka bisa menggunakan sintaks berikut.</p>
+<pre class="python"><code>data_dict = pd.DataFrame(data_dict)</code></pre>
+<p>Jika dijalankan, sintaks tersebut tidak menampilkan keluaran apapun karena hanya meng-<em>assign</em> <code>pd.DataFrame(data_dict)</code> ke <code>data_dict.</code> Jika ingin menampikan isi dari <code>data_dict</code> bisa menggunakan sintaks berikut.</p>
+<pre class="python"><code>data_dict</code></pre>
+<pre><code>##       Nama   Pekerjaan  Alamat
+## 0  Masdian  Freelancer  Serang
+## 1     Cato     Dreamer  Serang
+## 2     Abah  Programmer  Serang</code></pre>
+</div>
+<div id="membaca-file-excelcsv-di-phython" class="section level3">
+<h3>Membaca file Excel/csv di Phython</h3>
+<p>Membaca file excel atau csv di python bisa menggunakan fungsi <code>read_excel</code> atau <code>read_csv</code> dari library pandas. Misalkan kita akan membaca file <a href="https://github.com/masdian/data_sources/raw/main/HR_comma_sep.csv" target="_blank"><strong>HR_comma_sep.csv</strong></a> dari Kaggle. Karena akan menggunakan fungsi dari library <code>pandas</code>, maka jangan lupa untuk mengimpor library <code>pandas</code> terlebih dahulu.</p>
+<p><code>import pandas as pd</code></p>
+<p>Setelah itu</p>
+<pre class="python"><code>import pandas as pd</code></pre>
 </div>
 
       </div>
