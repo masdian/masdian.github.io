@@ -128,7 +128,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              2-minute read
+              4-minute read
             </span>
           </div>
           
@@ -203,9 +203,50 @@
 <div id="membaca-file-excelcsv-di-phython" class="section level3">
 <h3>Membaca file Excel/csv di Phython</h3>
 <p>Membaca file excel atau csv di python bisa menggunakan fungsi <code>read_excel</code> atau <code>read_csv</code> dari library pandas. Misalkan kita akan membaca file <a href="https://github.com/masdian/data_sources/raw/main/HR_comma_sep.csv" target="_blank"><strong>HR_comma_sep.csv</strong></a> dari Kaggle. Karena akan menggunakan fungsi dari library <code>pandas</code>, maka jangan lupa untuk mengimpor library <code>pandas</code> terlebih dahulu.</p>
-<p><code>import pandas as pd</code></p>
-<p>Setelah itu</p>
 <pre class="python"><code>import pandas as pd</code></pre>
+<p>Misalkan kita akan membaca <code>HR_comma_sep.csv</code> dan menyimpannya menjadi dataframe <code>df.</code></p>
+<p><code>df = pd.read_csv("HR_comma_sep.csv")</code></p>
+<p>Jika ingin mengetahui banyaknya peubah dan tipe data dari setiap peubah, maka bisa menggunakan fungsi <code>info()</code> pada dataframe <code>df</code>.</p>
+<pre class="python"><code>df.info()</code></pre>
+<pre><code>## &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+## RangeIndex: 14999 entries, 0 to 14998
+## Data columns (total 10 columns):
+##  #   Column                 Non-Null Count  Dtype  
+## ---  ------                 --------------  -----  
+##  0   satisfaction_level     14999 non-null  float64
+##  1   last_evaluation        14999 non-null  float64
+##  2   number_project         14999 non-null  int64  
+##  3   average_montly_hours   14999 non-null  int64  
+##  4   time_spend_company     14999 non-null  int64  
+##  5   Work_accident          14999 non-null  int64  
+##  6   left                   14999 non-null  int64  
+##  7   promotion_last_5years  14999 non-null  int64  
+##  8   sales                  14999 non-null  object 
+##  9   salary                 14999 non-null  object 
+## dtypes: float64(2), int64(6), object(2)
+## memory usage: 1.1+ MB</code></pre>
+<p>Ukuran atau dimensi dataframe <code>df</code></p>
+<pre class="python"><code>df.shape</code></pre>
+<pre><code>## (14999, 10)</code></pre>
+<p>Menampilkan data teratas dan data terbawah dari dataframe <code>df</code></p>
+<pre class="python"><code>df.head()</code></pre>
+<pre><code>##    satisfaction_level  last_evaluation  ...  sales  salary
+## 0                0.38             0.53  ...  sales     low
+## 1                0.80             0.86  ...  sales  medium
+## 2                0.11             0.88  ...  sales  medium
+## 3                0.72             0.87  ...  sales     low
+## 4                0.37             0.52  ...  sales     low
+## 
+## [5 rows x 10 columns]</code></pre>
+<pre class="python"><code>df.tail()</code></pre>
+<pre><code>##        satisfaction_level  last_evaluation  ...    sales  salary
+## 14994                0.40             0.57  ...  support     low
+## 14995                0.37             0.48  ...  support     low
+## 14996                0.37             0.53  ...  support     low
+## 14997                0.11             0.96  ...  support     low
+## 14998                0.37             0.52  ...  support     low
+## 
+## [5 rows x 10 columns]</code></pre>
 </div>
 
       </div>
