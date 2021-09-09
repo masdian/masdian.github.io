@@ -16,10 +16,9 @@
     <meta property="og:title" content="Introduction to Pandas" />
 <meta property="og:description" content="Tulisan ini terinspirasi setelah mengikuti sesi minggu ke-3 atau minggu terakhir dari Workshop Python for Data Scientist yang diselenggarakan oleh Program Studi Statistika dan Sains Data - IPB University. Workshop Pyhton for Data Scientist diselenggarakan selama 3 hari di mana hari pertama pada tanggal 21 Agustus 2021 membahas tentang Introduction to Python. Hari kedua diselenggarakan pada 28 Agustus 2021 dan membahas tentang Data Analysis using Python. Hari ketiga di mana akhirnya bisa ikut secara live diselenggarakan pada 04 September 2021." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2021-09-07-introduction-to-pandas/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="/posts/2021-09-07-introduction-to-pandas/" />
 <meta property="article:published_time" content="2021-09-07T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-09-07T00:00:00+00:00" />
-
 
 
     
@@ -62,7 +61,7 @@
     <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="generator" content="Hugo 0.80.0" />
   </head>
 
   
@@ -225,28 +224,25 @@
 ##  9   salary                 14999 non-null  object 
 ## dtypes: float64(2), int64(6), object(2)
 ## memory usage: 1.1+ MB</code></pre>
-<p>Ukuran atau dimensi dataframe <code>df</code></p>
-<pre class="python"><code>df.shape</code></pre>
+<p><code>df.info()</code> memberikan informasi tentang nama peubah yang ditampilkan pada kolom <code>Column.</code> Terdapat 10 peubah dimulai dari <code>satisfaction_level</code> hingga <code>salary.</code> Kolom <code>Non-Null Count</code> menampilkan banyak data yang tidak kosong dari setiap peubah. Terlihat bahwa tidak ada data kosong pada dataframe <code>df</code>. Tipe setiap peubah ditampilkan pada kolom <code>Dtype</code>. <code>float64</code> adalah tipe data berupa bilangan real, <code>int64</code> berupa integer atau bilangan bulat, dan <code>object</code> merupakan <em>string</em> atau karakter.</p>
+<p>Ukuran atau dimensi dataframe <code>df</code> bisa dilihat dari hasil yang ditampilkan <code>df.info(),</code> di mana terdapat 14.999 baris dan 10 kolom. Selain menggunakan fungsi <code>info()</code>, dimensi atau ukuran dataframe df bisa dilihat menggunakan fungsi <code>shape</code>.</p>
+<p><code>df.shape</code></p>
+<p>Dimensi dataframe yang dihasilkan fungsi <code>shape</code> adalah 14.999 baris dan 10 kolom.</p>
 <pre><code>## (14999, 10)</code></pre>
-<p>Menampilkan data teratas dan data terbawah dari dataframe <code>df</code></p>
-<pre class="python"><code>df.head()</code></pre>
+<p>Kita juga bisa menampilkan data teratas dari dataframe <code>df</code> menggunakan fungsi <code>head()</code>. Secara default fungsi ini akan menampilkan 5 data teratas. Jika ingin menampilkan sejumlah <code>k</code> data teratas, maka kita bisa menambahkan argumen <code>k</code> pada fungsi <code>head()</code>. Misalkan kita ingin menampilkan 8 data teratas, maka sintaks yang bisa digunakan adalah sebagai berikut.</p>
+<p><code>df.head(8)</code></p>
+<p>Output yang dihasilkan adalah sebagai berikut.</p>
 <pre><code>##    satisfaction_level  last_evaluation  ...  sales  salary
 ## 0                0.38             0.53  ...  sales     low
 ## 1                0.80             0.86  ...  sales  medium
 ## 2                0.11             0.88  ...  sales  medium
 ## 3                0.72             0.87  ...  sales     low
 ## 4                0.37             0.52  ...  sales     low
+## 5                0.41             0.50  ...  sales     low
+## 6                0.10             0.77  ...  sales     low
+## 7                0.92             0.85  ...  sales     low
 ## 
-## [5 rows x 10 columns]</code></pre>
-<pre class="python"><code>df.tail()</code></pre>
-<pre><code>##        satisfaction_level  last_evaluation  ...    sales  salary
-## 14994                0.40             0.57  ...  support     low
-## 14995                0.37             0.48  ...  support     low
-## 14996                0.37             0.53  ...  support     low
-## 14997                0.11             0.96  ...  support     low
-## 14998                0.37             0.52  ...  support     low
-## 
-## [5 rows x 10 columns]</code></pre>
+## [8 rows x 10 columns]</code></pre>
 </div>
 
       </div>
