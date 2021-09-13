@@ -127,7 +127,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              4-minute read
+              6-minute read
             </span>
           </div>
           
@@ -205,6 +205,9 @@
 <pre class="python"><code>import pandas as pd</code></pre>
 <p>Misalkan kita akan membaca <code>HR_comma_sep.csv</code> dan menyimpannya menjadi dataframe <code>df.</code></p>
 <p><code>df = pd.read_csv("HR_comma_sep.csv")</code></p>
+</div>
+<div id="operasi-dataframe-sederhana" class="section level3">
+<h3>Operasi dataframe sederhana</h3>
 <p>Jika ingin mengetahui banyaknya peubah dan tipe data dari setiap peubah, maka bisa menggunakan fungsi <code>info()</code> pada dataframe <code>df</code>.</p>
 <pre class="python"><code>df.info()</code></pre>
 <pre><code>## &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
@@ -243,6 +246,57 @@
 ## 7                0.92             0.85  ...  sales     low
 ## 
 ## [8 rows x 10 columns]</code></pre>
+<p>Selain menampilkan data teratas, kita juga bisa menampilkan data paling bawah menggunakan fungsi <code>tail().</code> Misalnya kita akan menampilkan 10 data paling bawah.</p>
+<pre><code>##        satisfaction_level  last_evaluation  ...      sales  salary
+## 14989                0.43             0.57  ...  technical     low
+## 14990                0.89             0.88  ...    support     low
+## 14991                0.09             0.81  ...    support     low
+## 14992                0.40             0.48  ...    support     low
+## 14993                0.76             0.83  ...    support     low
+## 14994                0.40             0.57  ...    support     low
+## 14995                0.37             0.48  ...    support     low
+## 14996                0.37             0.53  ...    support     low
+## 14997                0.11             0.96  ...    support     low
+## 14998                0.37             0.52  ...    support     low
+## 
+## [10 rows x 10 columns]</code></pre>
+<p>Jika kita ingin menampilkan <span class="math inline">\(k\)</span> buah data secara acak, maka kita bisa menggunakan fungsi <code>sample()</code> dengan argumen <span class="math inline">\(k\)</span>. Misalkan kita ingin menampilkan 8 buah data secara acak.</p>
+<p><code>df.sample(8)</code></p>
+<p>Output yang dihasilkan adalah sebagai berikut.</p>
+<pre><code>##        satisfaction_level  last_evaluation  ...        sales  salary
+## 2293                 0.75             0.77  ...   management  medium
+## 10371                0.99             0.37  ...  product_mng     low
+## 13614                0.48             0.67  ...   management  medium
+## 10317                0.22             0.70  ...        sales  medium
+## 3024                 0.41             0.96  ...      support  medium
+## 12006                0.10             0.77  ...        sales     low
+## 5106                 0.53             0.80  ...           IT     low
+## 3869                 0.74             0.70  ...      support     low
+## 
+## [8 rows x 10 columns]</code></pre>
+<p>Terlihat bahwa data yang ditampilkan tidak berurutan, tetapi diambil secara acak.</p>
+<p>Jika ingin menghitung dan menampilkan ringkasan data dari dataframe <code>df</code>, kita bisa menggunakan fungsi <code>describe.</code> Berikut adalah sintaks yang bisa digunakan.</p>
+<p><code>df.describe()</code></p>
+<p>Output:</p>
+<pre><code>##        satisfaction_level  last_evaluation  ...          left  promotion_last_5years
+## count        14999.000000     14999.000000  ...  14999.000000           14999.000000
+## mean             0.612834         0.716102  ...      0.238083               0.021268
+## std              0.248631         0.171169  ...      0.425924               0.144281
+## min              0.090000         0.360000  ...      0.000000               0.000000
+## 25%              0.440000         0.560000  ...      0.000000               0.000000
+## 50%              0.640000         0.720000  ...      0.000000               0.000000
+## 75%              0.820000         0.870000  ...      0.000000               0.000000
+## max              1.000000         1.000000  ...      1.000000               1.000000
+## 
+## [8 rows x 8 columns]</code></pre>
+<p>Terlihat bahwa yang ditampilkan adalah ringkasan data untuk semua peubah bertipe numerik (<code>float64</code>, <code>integer64</code>). Sedangkan untuk peubah bertipe <code>object</code> tidak ditampilkan. Jika ingin menampilkan ringkasan data untuk peubah bertipe <code>object</code>, maka bisa menggunakan sintaks berikut.</p>
+<p><code>df.select_dtypes('object').describe()</code></p>
+<p>Output</p>
+<pre><code>##         sales salary
+## count   14999  14999
+## unique     10      3
+## top     sales    low
+## freq     4140   7316</code></pre>
 </div>
 
       </div>
