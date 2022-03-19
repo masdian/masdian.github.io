@@ -13,9 +13,9 @@
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>/posts/2022-03-19-membuat-dan-mengakses-objek-matriks-di-r/</guid>
-      <description>Membuat matriks dan mengaksesnyaMisalkan kita ingin membuat matriks \(A\) yang berukuran \(2\times3\) di R seperti berikut.
+      <description>Membuat matriks dan mengaksesnyaMisalkan kita ingin membuat matriks \(A\) yang berukuran \(2\times3\) di R seperti berikut.
 \[\begin{bmatrix}1 &amp;amp; 3 &amp;amp; 5 \\7 &amp;amp; 4 &amp;amp; 6\end{bmatrix}\] maka perintah yang digunakan adalah sebagai berikut
-A &amp;lt;- matrix(c(1, 3, 5, 7, 4, 6), ncol = 3, byrow = T)</description>
+A &amp;lt;- matrix(c(1, 7, 3, 4, 5, 6), ncol = 3)Perhatikan penulisan anggota atau elemen matriks \(A\) pada sintaks R, c(1, 7, 3, 4, 5, 6). Secara default, R akan membaca elemen matriks berdasarkan kolom dimulai dari kolom pertama hingga kolom terakhir.</description>
     </item>
     
     <item>
