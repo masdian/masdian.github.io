@@ -122,8 +122,8 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>My name is Riana Hadiana and I am a data lover. I love making beautiful charts, the statistical programming language R, soccer, futsal, Stephen Chow, Real Racing 3, FIFA mobile, and something stupid like I love you. I studied Statistics (formal) and Computer Science (non-formal), finishing my master in 2019. I live in Serang and Lampung, Indonesia, with my job and my family.
-This blog is built with blogdown and Hugo.</description>
+      <description>My name is Riana Hadiana and I am a data lover. I love making beautiful charts, the statistical programming language R, soccer, futsal, and playing games (Real Racing 3 and FIFA mobile). I studied Statistics (formal) and Computer Science (non-formal), finishing my master in 2019. I live in Serang and Lampung, Indonesia, with my job and my family.
+This blog is built with blogdown and Hugo. It is deployed using github and Netlify.</description>
     </item>
     
     <item>
