@@ -6,7 +6,16 @@
     <description>Recent content on masdian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 19 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Belum Ada Judul</title>
+      <link>/posts/2023-03-27-belum-ada-judul/</link>
+      <pubDate>Mon, 27 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2023-03-27-belum-ada-judul/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Membuat dan Mengakses Objek Matriks di R</title>
       <link>/posts/2022-03-19-membuat-dan-mengakses-objek-matriks-di-r/</link>
