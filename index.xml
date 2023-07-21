@@ -6,7 +6,16 @@
     <description>Recent content on masdian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menghubungkan Posit Cloud Project dengan Github melalui SSH</title>
+      <link>/posts/2023-07-21-menghubungkan-posit-cloud-project-dengan-github-melalui-ssh/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2023-07-21-menghubungkan-posit-cloud-project-dengan-github-melalui-ssh/</guid>
+      <description>Baru akan mau dimulai :-)</description>
+    </item>
+    
     <item>
       <title>Belum Ada Judul</title>
       <link>/posts/2023-03-27-belum-ada-judul/</link>
